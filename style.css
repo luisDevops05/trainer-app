@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +10,83 @@
 
 body {
   background-color: rgba(97, 94, 94, 0.646);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: rgb(98, 98, 98);
+  border-bottom: solid 0.5px white;
+  /* margin-right: 10px;
+    margin-left: 10px; */
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  margin-right: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.nav-branding {
+  display: flex;
+}
+
+.nav-link {
+  transition: 2s ease;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: rgb(56, 228, 13);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: white;
+}
+
+/* brand styling */
+.brand-name {
+  font-family: "Bebas Neue", cursive;
+  color: rgb(10, 228, 10);
+}
+
+.hero-part1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 80px 100px;
+  margin-top: 70px;
+}
+.hero-child1 {
+  font-size: 35px;
+  color: rgb(82, 208, 57);
+  font-family: "Creepster", cursive;
 }
